@@ -1,8 +1,5 @@
 var express = require('express'),
-    app = express(),
-    jsforce = require('jsforce');
-
-
+    app = express();
 
 app.use(express.static('www'));
 
