@@ -20,7 +20,7 @@ app.listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
 });
 
-app.use(login);
+app.use('/login', login);
 
 function login() {
     console.log('logging in');
