@@ -8,8 +8,7 @@ angular.module('starter.controllers', [])
         console.log('login result');
         return result;
       })
-    },
-  }
+    }
 })
 
 .controller('FriendsCtrl', function($scope, Friends) {
