@@ -1,10 +1,9 @@
 angular.module('starter.controllers', [])
 
-var jsforce = require('jsforce');
-
 .controller('DashCtrl', function($scope) {
   $scope.login = function(){
     console.log('logging in');
+    var jsforce = require('jsforce');
     var conn = new jsforce.Connection({
       loginUrl : 'https://test.salesforce.com'
     });
