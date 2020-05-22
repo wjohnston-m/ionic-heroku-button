@@ -23,7 +23,7 @@ app.listen(app.get('port'), function () {
 app.use('/login', login);
 
 function login() {
-    console.log('logging in');
+    console.log('server logging in');
     var conn = new jsforce.Connection({
       loginUrl : 'https://test.salesforce.com'
     });

@@ -1,7 +1,9 @@
 angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {
+  console.log('dashCtrl');
   $scope.login = function(){
+      console.log('login call');
       return $http.post('/login').then(function(result){
         console.log('login result');
         return result;
